@@ -1,4 +1,4 @@
-FROM apline:latest
+FROM alpine:latest
 
 MAINTAINER Hans Spaans <hans@dailystuff.nl>
 
