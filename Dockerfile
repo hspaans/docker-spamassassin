@@ -1,6 +1,8 @@
 FROM alpine:3.11
 
-MAINTAINER Hans Spaans <hans@dailystuff.nl>
+LABEL maintainer="Hans Spaans <hans@dailystuff.nl>" \
+      version="3.4.3" \
+      description="SpamAssassin"
 
-RUN apk add --no-cache spamassassin~=3.4.3
-
+RUN apk add --no-cache spamassassin~=3.4.3 && \
+    rm -rf /var/cache/apk/*
